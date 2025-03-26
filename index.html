@@ -37,6 +37,18 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
         footer {
             text-align: center;
             padding: 10px;
@@ -64,8 +76,12 @@
     
     <section id="gallery">
         <h2>Bộ sưu tập</h2>
-        <p>Trà My xứ lạnh phát triển tốt tại đất ba-zan huyện Vĩnh Linh, tỉnh Quảng Trị..</p>
-        <img src="https://raw.githubusercontent.com/trankimkhanhqt/MO-BonsaiQT/main/assets/images/Tra_DoCungDinh.jpg" alt="Trà Đỏ Cung Đình" width="300">
+        <p>Các loại Bonsai và cây cảnh đẹp.</p>
+        <div class="gallery">
+            <img src="https://raw.githubusercontent.com/trankimkhanhqt/MO-BonsaiQT/main/assets/images/Tra_DoCungDinh.jpg" alt="Trà Đỏ Cung Đình">
+            <img src="https://raw.githubusercontent.com/trankimkhanhqt/MO-BonsaiQT/main/assets/images/MaiVang.jpg" alt="Mai Vàng">
+            <img src="https://raw.githubusercontent.com/trankimkhanhqt/MO-BonsaiQT/main/assets/images/HaiDuong.jpg" alt="Hải Đường">
+        </div>
     </section>
     
     <section id="articles">
